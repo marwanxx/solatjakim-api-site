@@ -26,7 +26,7 @@ $ composer create-project kayrules/solatjakim-api-site --stability="dev"
 
 ###3. Setup Permission
 
-After composer finished install the dependencies, you need to change file and folder permission.
+After composer finished install the dependencies, it should automatically change the storage folder permission to 777. Just incase if it's not did as expected, you need to manually change it recursively as command below.
 ```
 $ chmod -R 777 app/storage/
 ```
