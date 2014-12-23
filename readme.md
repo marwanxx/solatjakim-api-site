@@ -1,6 +1,32 @@
-Solat Jakim REST API Unofficial Site
----
+#Solat Jakim REST API Unofficial Site
 
-This web site is an unoffical site for serving public REST API for Waktu Solat in Malaysia provided by Jakim.
-The website source codes was purposely made public in GitHub so that anybody interested in this project could contribute to the work.
+Solat Jakim REST API web site is an unoffical site for serving public REST API for Waktu Solat in Malaysia provided by Jakim. The website source codes was purposely made public in GitHub so that anybody interested in this project could contribute to the work.
 
+The website was built using Laravel MVC, with Eloquant as the database provider for MySQL and Blade as the template engine.
+
+##Live Website
+The latest version of the website will always be available at http://api.kayrules.com/solatjakim
+
+##Installation
+
+###1. Manual Install
+
+You can manually install by cloning this repo or download the zip file from this repo, and run composer install.
+```
+$ git clone https://github.com/kayrules/solatjakim-api-site.git .
+$ composer install
+```
+
+###2. Install via composer
+
+Alternatively, you can use composer create-project to install without downloading zip or cloning this repo.
+```
+$ composer create-project kayrules/solatjakim-api-site --stability="dev"
+```
+
+###3. Setup Permission
+
+After composer finished install the dependencies, you need to change file and folder permission.
+```
+$ chmod -R 777 app/storage/
+```
